@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgB7ZSxCYQwFIZfDltdwFrQCWwdxD20sLTQ2hXcwFJBWydwAgdQB7i7PMgjasQT0xz4gfiT/+fnhZCw9xfQyAs088eFQRCA4zjQNA2t1XWNa9z7qXAYBuj7HvU4jvif55n8ZVlWnpwXGEJwIwxD1FVVwRnbvOu6+wkF0zTBFeS89kOhLcdxrAykaQpFUewmkYmiCLqug9WEdy4MY4w0FeZ5rgwnSQJt2+LHtYosy/aFuqBCy7LgCkd5OhTP86AsSwxyfcZR3pBDvu+Ttm0bb4Q8iWma5G3zAva8h7f5AAQFWPdAPylcAAAAAElFTkSuQmCC"
+    />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/91_js_konstantin-it-lysenko/assets/index-dfdcfad9.js"></script>
+    <link rel="modulepreload" crossorigin href="/91_js_konstantin-it-lysenko/assets/loader-ae728095.js">
+    <link rel="stylesheet" href="/91_js_konstantin-it-lysenko/assets/loader-019e67b9.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="header-container container">
+    <div class="header-logo-container">
+      <a href="./index.html" id="logo-link">
+        <svg class="header-logo-icon" width="132" height="24">
+          <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="header-nav-container">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item" id="home-item">
+            <a href="./index.html" class="header-nav-link active" id="home-link"
+              >Home</a
+            >
+          </li>
+          <li class="header-nav-item" id="favorites-item">
+            <a
+              href="./favourites-page.html"
+              class="header-nav-link"
+              id="favorites-link"
+              >Favorites</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-social">
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href="http://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-burger">
+      <span class="burger-1"></span><span class="burger-2"></span>
+    </div>
+
+    <!-- ================== МОБІЛЬНЕ  МЕНЮ====================== -->
+
+    <div class="mobile-menu-container" id="mobile-menu">
+      <div class="close-button"></div>
+      <div class="mobile-menu-wrap">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./favourites-page.html" class="mobile-menu-link"
+              >Favorites</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu-social">
+        <ul class="mobile-menu-social-list">
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="http://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="28" height="28">
+                <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="28" height="28">
+                <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="28" height="28">
+                <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+  <div class="hero-container container">
+    <div class="hero-title-container">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABUUExURUdwTCQkJCQkJCUlJSMjIyUlJSQkJCAgICAgICQkJCQkJCMjIyMjIyQkJCUlJSMjIyQkJCMjIyQkJCMjIyMjIyQkJCEhISQkJCUlJSUlJSQkJCQkJIR3Ma4AAAAbdFJOUwCAv2DfMO8gEEBwUGDPn5CvoH9fn48fsG/fP/V6IGcAAAMxSURBVBgZzcFbcts4EEDRC6CB7gafethJBvvf51AkJTuJZMkfUzXn8L+iXOk7V8Z36TtXymsss9N3dplXObuc2TmvcmPjzkadl1U27mw6nlBuAht3NoEb466OK+9YdT2r5Fx13Gc9VzOr1LM6c5WUB7RjF5yL1HORJ3ad8pCf2PjIReq5OGc2p8wX6onNbCxCYKHC5lT5UjixCoFFCCxqZXUKPHE4caGFRQgsRLk4HbjD+MQG5yJ2wDQBKXKRB+MedT7okFnUCBxGIPYs8qB8UOWDOzcqGbDmcBhBmwJZlCvrOuMzTb2y85KBOMFhhHMEcunYWa3Gn3QalU0tGWox4g+09ZBLYGPHYNyjh1FZTUWxEoiR1BQtgZWfo/JIHqJzMYsSCzEiP1CZufAYna8kkR4wEU3NY0ytVxEDUhTnmSTSKyqSS5RfsaiIYsdSel4RREbNRWJrpUUpasdSgvEaPbQ2hlZC9lDa27mVYNyl6l5T567KjR5aK8pCS2ujcqPqnlLqcjZjY9nrNMdSJMY4voWQglRWoRxSCOM4x0GkDONUOzXusdzVaR5KW2RWuS3KME+1y8YrrJtKZuVlzsbrLI2ltcDq2FoZO+MllmJpZQyxKAuVWGdpbe6VJ6zGVsaq6NCkHN2PZWii5DRLi73ykNVYxqosvJQam7RWWqxFMoucZom9coceD2NSNj/boKmFYRh+Tc1V2pFNToe5Kr/xFJJy89YmEKGNU1MRI7Q3bjTVmtlp/kf5RAdxODbNrU/t3VuALIPyiborC+N3WSYDlUDXsraOqRjYQTJP/ZSOxVkgFCgVkzcWSSpPvEVloU1hjjCP4M1ZaDzyFZsrqyEAMUAdgCmyClF5KM/KKgmL4uAFMOlYaVQeOAVjIwpYM7BmgIuxqT13JWd3DCx8YDFkFlNg5z1/s2TsdOAijSymnoUNxk474w/WcXNWLqaeRZq48JEb5w/GjQZWc2ahP1hNzgfjkZlNZDWwspEXJGUTWc1svOe5nk0OrOo7m2o8k9i5s/KOjfU8ocquGiur7LLyNeWqZ1e5yrwqseu4MuVFHTvn2yyzU+O7MjfKdxk3xn/hXzLQHpdWH6c+AAAAAElFTkSuQmCC"
+        alt="sun-icon"
+        width="60"
+        height="60"
+        class="sun-img"
+      />
+      <h1 class="hero-title">Get <span>Body</span> in shape, Stay healthy</h1>
+    </div>
+    <p class="hero-text">
+      Transform your physique and embrace a healthier lifestyle with our
+      comprehensive fitness and nutrition support.
+    </p>
+    <div class="hero-img">
+      <picture>
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-desk1x-45e96707.jpg 1x, /91_js_konstantin-it-lysenko/assets/women-desk2x-21f849ed.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-tab1x-32e79bc0.jpg 1x, /91_js_konstantin-it-lysenko/assets/women-tab2x-be765b7c.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-mob1x-1d5cb5be.jpg 1x, /91_js_konstantin-it-lysenko/assets/women-mob2x-ed4657a8.jpg 2x"
+          media="(max-width: 767.98px)"
+        />
+        <img
+          src="/91_js_konstantin-it-lysenko/assets/women-desk1x-45e96707.jpg"
+          alt="Two Girls Training"
+          width="1376"
+          height="350"
+          class="hero-image"
+        />
+      </picture>
+
+      <div class="hero-tags">
+        <picture>
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /91_js_konstantin-it-lysenko/assets/legs-img2x-ea908530.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Legs"
+            class="desktop-legs"
+            width="168"
+            height="100"
+          />
+        </picture>
+        <ul class="hero-tags-list">
+          <li class="hero-tags-item">#Sport</li>
+          <li class="hero-tags-item">#Healthy</li>
+          <li class="hero-tags-item">#Workout</li>
+          <li class="hero-tags-item">#Diet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="exercises">
+  <div class="container">
+    <div class="cat-filter-container">
+      <h2 class="exercises-title">
+        Exercises <span class="exercises-title-span"></span>
+      </h2>
+      <div class="filter-container">
+        <input
+          type="text"
+          class="cat-filter-input"
+          placeholder="Search"
+          hidden
+        />
+        <ul class="cat-filter-list">
+          <li class="cat-filter-item">
+            <button
+              type="button"
+              class="cat-filter-btn active"
+              data-name="Body parts"
+            >
+              Body parts
+            </button>
+          </li>
+          <li class="cat-filter-item">
+            <button type="button" class="cat-filter-btn" data-name="Muscles">
+              Muscles
+            </button>
+          </li>
+          <li class="cat-filter-item">
+            <button type="button" class="cat-filter-btn" data-name="Equipment">
+              Equipment
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="exercises-wrapper">
+      <div class="cat-main-wrapper">
+  <ul class="categories-list"></ul>
+  <ul class="exercises-list is-hidden d-none"></ul>
+  <ul class="cat-pagination-list">
+    <li class="cat-pagination-item">
+      <button
+        type="button"
+        class="cat-pagination-btn first--pagi active"
+        data-page="prev"
+      >
+        1
+      </button>
+    </li>
+
+    <li class="cat-pagination-item">
+      <button type="button" class="cat-pagination-btn" data-page="middle">
+        2
+      </button>
+    </li>
+
+    <li class="cat-pagination-item">
+      <button type="button" class="cat-pagination-btn" data-page="next">
+        3
+      </button>
+    </li>
+  </ul>
+
+  <ul class="exer-pagination-list is-hidden d-none">
+    <li class="exer-pagination-item">
+      <button
+        type="button"
+        class="exer-pagination-btn first--pagi active"
+        data-exer="prev"
+      >
+        1
+      </button>
+    </li>
+
+    <li class="exer-pagination-item">
+      <button type="button" class="exer-pagination-btn" data-exer="middle">
+        2
+      </button>
+    </li>
+
+    <li class="exer-pagination-item">
+      <button type="button" class="exer-pagination-btn" data-exer="next">
+        3
+      </button>
+    </li>
+  </ul>
+</div>
+
+      <aside class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-quote" id="app">
+      <ul class="sidebar-quotewrap">
+        <li>
+          <svg class="sidebar-quotesvg1" width="18" height="20">
+            <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-running-stick"></use>
+          </svg>
+        </li>
+        <li class="sidebar-quoteitem">
+          <h2>Quote of the day</h2>
+          <p class="quote"></p>
+          <h3 class="author"></h3>
+        </li>
+        <li>
+          <svg class="sidebar-quotesvg2" width="20" height="20">
+            <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-quotes"></use>
+          </svg>
+        </li>
+      </ul>
+    </li>
+    <li id="sidebar-error" style="display: none">
+      <img
+        class="image-error404"
+        src="/91_js_konstantin-it-lysenko/assets/error-404-342914bc.jpg"
+        alt="error404"
+      />
+    </li>
+    <li>
+      <picture>
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-96c2a8f2.jpg 1x, /91_js_konstantin-it-lysenko/assets/women@2x-5960d9bf.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-tab-acea5295.jpg 1x, /91_js_konstantin-it-lysenko/assets/women-tab@2x-03a9616b.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/91_js_konstantin-it-lysenko/assets/women-mobile-85bdf403.jpg 1x, /91_js_konstantin-it-lysenko/assets/women-mobile@2x-db2955a4.jpg 2x"
+          media="(min-width: 375px)"
+        />
+        <img
+          class="sidebar-photo"
+          src="/91_js_konstantin-it-lysenko/assets/women-mobile-85bdf403.jpg"
+          alt="Women sportswear taking break from workout"
+          width="335"
+          height="242"
+        />
+      </picture>
+    </li>
+    <li class="sidebar-info" id="startTimerListItem">
+      <ul class="sidebar-infowrap">
+        <li class="sidebar-timerstart">
+          <svg class="sidebar-infosvg" width="20" height="20">
+            <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-dumbbell"></use>
+          </svg>
+        </li>
+        <li>
+          <h2 id="timerValue">110 min</h2>
+          <h3>Daily norm of sports</h3>
+          <p class="sidebar-infotext">
+            The World Health Organization recommends at least 150 minutes of
+            moderate-intensity aerobic physical activity throughout the week for
+            adults aged 18-64. However, what happens if we adjust that number to
+            110 minutes every day? While it might seem like a high number to
+            hit, dedicating 110 minutes daily to sporting activities may offer
+            unparalleled benefits to physical health, mental well-being, and
+            overall quality of life.
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+	<div class="container">
+		<div class="footer_wrap3">
+			<div class="footer_wrap_wrap1_foottitle">
+				<div class="footer_wrap1_logo_soc">
+					<a class="footer_logo_link" href="./index.html">
+						<svg id="footer_logo_icon" class="footer_logo_icon" width="132" height="24">
+							<use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-logo"></use>
+						</svg>
+					</a>
+
+					<ul class="footer_soc_list">
+						<li class="footer_soc_item">
+							<a rel="noopener noreferrer" target="_blank" class="footer_soc_link"
+								href="https://www.facebook.com/goITclub/">
+								<svg class="footer_soc_icon" width="24" height="24">
+									<use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer_soc_item">
+							<a rel="noopener noreferrer" target="_blank" class="footer_soc_link"
+								href="https://www.instagram.com/goitclub/">
+								<svg class="footer_soc_icon" width="24" height="24">
+									<use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer_soc_item">
+							<a rel="noopener noreferrer" target="_blank" class="footer_soc_link"
+								href="https://www.youtube.com/c/GoIT">
+								<svg class="footer_soc_icon" width="24" height="24">
+									<use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-youtube"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<h2 class="footer_title">
+					Transforming your <span class="footer_title_span">body</span> shape
+					with us
+				</h2>
+			</div>
+			<form class="footer_form js-footer-form" action="submit">
+				<p class="fotter_form_title">
+					Subscribe and learn about new exercises!
+				</p>
+				<input type="email" name="email" placeholder="Email" id="emailInput" required />
+
+				<button class="footer_form_btn" type="submit">Send</button>
+			</form>
+		</div>
+		<div class="footer_wrap2">
+			<p class="footer_text">Your Energy. All rights reserved.</p>
+			<div class="footer_wrap_info">
+				<ul class="footer_list_info">
+					<li class="footer_item_info">
+						<a href="#" class="footer_link_info">Privacy Policy</a>
+					</li>
+					<li class="footer_item_info">/</li>
+					<li class="footer_item_info">
+						<a href="#" class="footer_link_info">Terms of Service</a>
+					</li>
+				</ul>
+
+				<p class="footer_text_year">©2023</p>
+				<button type="button" class="team-btn-open">Produced by</button>
+			</div>
+		</div>
+	</div>
+</footer>
+
+    
+    
+    <div class="team-backdrop is-hidden">
+  <div class="team-modal">
+    <div class="team-wrapper">
+      <button type="button" class="team-btn-close">
+        <svg class="team-close-icon" width="24" height="24">
+          <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="team-list"></ul>
+
+      <a
+        href="https://github.com/konstantin-it-lysenko/projectDreamTeamJS"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-git"
+        >See Project on
+        <svg class="project-icon" width="28" height="28">
+          <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-github"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div id="loader" class="mask">
+    <div class="loader"></div>
+    <svg class="spinner" width="28" height="28">
+        <use href="/91_js_konstantin-it-lysenko/assets/sport-sprite-b2c6dc33.svg#icon-dumbbell"></use>
+      </svg>
+
+<!--     
+    <svg aria-label="Spinner" class="svg-color">
+
+        <use class="spinner" href="/src/img/sport-sprite.svg"></use>
+    </svg> -->
+    <!-- <img src="img/Vector.svg" alt="Loader Spinner" class="spinner"> -->
+</div>
+    <div class="scroll-up ">
+    <svg  viewbox ="-2 -2 52 52">
+        <path class="scroll-up__path" d = "M24,0
+        a24,24 0 0,1 0,48
+        a24,24 0 0,1 0,-48"/>
+        <svg class="arrow-up" width="50" height="50">
+            <!-- <use href="./img/sport-sprite.svg#icon-arrow-up"></use> -->
+            <image x="0" y="0" width="48" height="48" xlink:href="/91_js_konstantin-it-lysenko/assets/Group 2-a63a8d84.svg" />
+          </svg>
+    </svg>
+</div>
+
+    
+  </body>
+</html>
